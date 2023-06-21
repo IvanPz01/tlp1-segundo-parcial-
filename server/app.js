@@ -7,6 +7,13 @@ const path = require("path");
 require("dotenv").config();
 const port = process.env.PORT || 6000;
 
+const { sequelize } = require("./dataBase");
+sequelize
+  .authenticate()
+  .then(() => console.log("Conexión a base de datos exitosa"))
+  .catch((error) => console.log("Error al conectar a base de datos", error));
+
+
 const app = express();
 
 // Middlewares
