@@ -1,0 +1,37 @@
+<%- include('../partials/header') %>
+    <div class="container">
+        <div class="row mt-5">
+
+            <div class="row">
+                <div class="col-md-4 mb-3">
+                    <a href="/index" class="btn btn-sm btn-primary">Regresar</a>
+                    <a href="/" class="btn btn-sm btn-info text-light">Inicio</a>
+                </div>
+            </div>
+            <div class="mx-auto col-sm-9 col-md-6 col-lg-5 col-xl-4">
+                <form id="formEditar" class="w-100 border rounded p-3" action="#" data-id="<%= id  %>">
+                    <h2 class="text-center">Editar Tarea</h2>
+                    <hr>
+                    <div class="mb-3">
+                        <label for="exampleFormControlInput1" class="form-label">Titulo</label>
+                        <input type="text" value="" id="titulo" class="form-control" id="exampleFormControlInput1">
+                    </div>
+                    <div class="mb-5">
+                        <label for="exampleFormControlTextarea2" class="form-label">Descripción</label>
+                        <textarea class="form-control" id="descripcion" id="exampleFormControlTextarea2" rows="3">
+                        </textarea>
+                    </div>
+                    <div class="mb-5">
+                        <label for="exampleFormControlTextarea2" class="form-label">Descripción</label>
+                        <textarea class="form-control" id="descripcion" id="exampleFormControlTextarea2" rows="3">
+                        </textarea>
+                    </div>
+                    <button type="submit" class="btn btn-warning w-100">
+                        Editar
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <%- include('../partials/footer') %>

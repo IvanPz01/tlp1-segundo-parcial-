@@ -1,0 +1,52 @@
+<%- include('../partials/header') %>
+
+<div class="container mt-5">
+  <div class="row">
+    <div class="row mb-2">
+      <div class="col-md-5">
+        <a href="/tareas" id="btnRegresar" class="btn btn-sm btn-primary"
+          >Regresar</a
+        >
+        <a href="/" class="btn btn-sm btn-info text-light">Inicio</a>
+      </div>
+    </div>
+
+    <div class="mx-auto col-sm-9 col-md-6 col-lg-5 col-xl-4">
+      <form action="#" id="formNuevaTarea" class="rounded border p-3">
+        <h3 class="mb-3 text-center bg-primary text-light rounded p-2">
+          Nueva Reserva
+        </h3>
+        <div class="mb-3">
+          <label for="titulo" class="form-label">Nombre Y Apellido</label>
+          <input
+            type="text"
+            class="form-control"
+            id="nombreYApellido"
+            name="nombreYApellido"
+          />
+        </div>
+        <div class="mb-3">
+          <label for="descripcion" class="form-label">Codigo de Reserva</label>
+          <textarea
+            class="form-control"
+            id="codeReser"
+            name="codeReser"
+            rows="3"
+          ></textarea>
+        </div>
+        <div class="mb-3">
+            <label for="descripcion" class="form-label">Fecha</label>
+            <textarea
+              class="form-control"
+              id="Fecha"
+              name="Fecha"
+              rows="3"
+            ></textarea>
+          </div>
+        <button type="submit" class="btn btn-primary">Guardar</button>
+      </form>
+    </div>
+  </div>
+</div>
+
+<%- include('../partials/footer') %>

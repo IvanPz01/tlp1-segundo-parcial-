@@ -58,7 +58,7 @@ ctrlReservas.obtenerReserva = async (req, res) => {
 };
 
 // Crear una reserva
-ctrlReservas.crearTarea = async (req, res) => {
+ctrlReservas.crearReserva = async (req, res) => {
   const { nombreYApellido, codeReser, Fecha } = req.body;
 
   try {

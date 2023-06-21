@@ -13,7 +13,6 @@ sequelize
   .then(() => console.log("Conexión a base de datos exitosa"))
   .catch((error) => console.log("Error al conectar a base de datos", error));
 
-
 const app = express();
 
 // Middlewares
@@ -49,5 +48,5 @@ app.use((req, res, next) => {
 
 // Starting the server
 app.listen(port, () =>
-  console.log(`Servidor corriendo en http://localhost:${port}`)
+  console.log(`Servidor corriendo en http://localhost:${port}/reservas`)
 );
